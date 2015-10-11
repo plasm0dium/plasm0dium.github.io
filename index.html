@@ -69,13 +69,68 @@
               <a class="story-img" href="#"><img src="https://keyholesoftware.com/wp-content/uploads/Backbone.js-Post-Image.jpg" style="width:100px;height:100px" class="img-circle"></a>
             </div>
             <div class="col-md-10 col-sm-9">
-              <h3>First half of Makersquare</h3>
+              <h3>My journey through Makersquare's curriculum</h3>
               <div class="row">
-                <div class="col-xs-9">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-                  Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
-                  dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
-                  Aliquam in felis sit amet augue.</p>
+                <div class="col-xs-12">
+                    <div>It is amazing how I am already half way through the Makersquare bootcamp.  I remembered the first day I walked into ROC, I was skeptical about how much I would learn from the program.  The learning process took off on the first day that I got there.  The program covers some of the most important concepts in computer science such as advanced algorithms and data structures.  Then we dove deep into javascript object oriented programming and tackled some difficult topics such as backbone and D3. We made our way to the backend where we learned server sided technologies such as node.js and the different types of databases.  When we finished our curriculum working with the angular framework, I personally thought that D3 and backbone.js were more challenging than the other topics from the program.  Although, backbone is lightweight MVC framework compare to Ember or Angular but I find myself not understanding the ‘big picture’ on nested model/collection, and how all the components work together.  The way events are bound and rendered in the various views actually seems like a lot of entanglements.  Below here is an example hello world code base on backbone: 
+
+                    </div>
+  
+                    <div class='col-sm-9'>
+                     //Create model and class where the data goes to
+                     <br>
+                        var HelloWorld = Backbone.Model.extend({
+                        <br>
+                          defaults: function() {
+                      return {
+                        name: “”
+                        }
+                      }
+                    });
+
+                    <br>
+                    //Create instance of the model
+                    <br>
+                      var helloWorld = new Greeting({
+                        name: “Hello World!”
+                    });
+
+                    <br>
+                    //Create view class to render in HTML
+                    <br>
+                    var SayHello = Backbone.Model.extend({
+                      el: $(‘body’),
+                    <br>
+                      initialize: function(){
+                      _.bindAll(this, ‘render’);
+                      this.render();
+                    }
+                    <br>
+                        render: function(){
+                        $(this.el).append(“<p>Hello world</p>”);}
+                    })
+                    <br>
+                    //Create instantiation view of greeting
+                    <br>
+                      var sayHello = new SayHello({
+                        model: helloWorld
+                    });
+                    </div>
+
+                    <div>
+                    I also have to handed to D3.  At first, they look beautiful, friendly, and sexy, but i can’t seem to understand how you can use to manipulate documents based on data.  
+                    I am glad we were able to learn them.  It encourages me to read and watch more videos about backbone and D3 on my own time.  It seems the best way to learn about backbone js and D3 is through practices.  I am not certain to say i understand them completely but i definitely know more about them.
+                    <hr>
+                    Here are some resources to help you get through backbone and D3:
+                    <br>
+                    Pluralsight tutorial: http://bit.ly/1LroIUn
+                    <br>
+                    Learn Backbone js: http://bit.ly/1iWH6HO
+                    <br>
+                    Backbone tutorial: https://backbonetutorials.com/
+                    <br>
+                    D3 youtube tutorial: http://bit.ly/1QSHDWa
+                    </div>
                   </div>
                 <div class="col-xs-3"></div>
               </div>
