@@ -1,169 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<title>Welcome to Ted's blog</title>
-		<meta name="generator" content="Bootply" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-		<!--[if lt IE 9]>
-			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<link href="css/styles.css" rel="stylesheet">
-	</head>
-	<body>
-<header class="navbar navbar-default navbar-fixed-top" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/" class="navbar-brand">Home</a>
-    </div>
-    <nav class="collapse navbar-collapse" role="navigation">
-    </nav>
-  </div>
-</header>
-
-<div id="masthead">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7">
-        <h2>Welcome to my adventure
-        </h2>
-      </div>
-      <div class="col-md-5">
-        <div class="well well-lg">
-          <div class="row">
-            <div class="col-sm-12">
-              My name is Ted, I am a software engineer.  I am specialize in React, Javascript, HTML, and CSS.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div><!-- /cont -->
-
-
-</div>
-
-
-<div class="container">
-  <div class="row">
-
-    <div class="col-md-12">
-
-      <div class="panel">
-        <div class="panel-body">
-
-
-          <!--/stories-->
-		  <div class="row">
-            <br>
-            <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-img" href="#"><img src="https://keyholesoftware.com/wp-content/uploads/Backbone.js-Post-Image.jpg" style="width:100px;height:100px" class="img-circle"></a>
-            </div>
-            <div class="col-md-10 col-sm-9">
-              <h3>Hello World with Backbone framework</h3>
-              <div class="row">
-                <div class="col-xs-12">
-                    <div>It is amazing how I am already half way through the Makersquare bootcamp.  I remembered the first day I walked into ROC, I was skeptical about how much I would learn from the program.  The learning process took off on the first day that I got there.  The program covers some of the most important concepts in computer science such as advanced algorithms and data structures.  Then we dove deep into javascript object oriented programming and tackled some difficult topics such as backbone and D3. We made our way to the backend where we learned server sided technologies such as node.js and the different types of databases.  When we finished our curriculum working with the angular framework, I personally thought that D3 and backbone.js were more challenging than the other topics from the program.  Although, backbone is lightweight MVC framework compare to Ember or Angular but I find myself not understanding the ‘big picture’ on nested model/collection, and how all the components work together.  The way events are bound and rendered in the various views actually seems like a lot of entanglements.  Below here is an example hello world code base on backbone: 
-
-                    </div>
-  
-                    <div class='col-sm-9'>
-                     //Create model and class where the data goes to
-                     <br>
-                        var HelloWorld = Backbone.Model.extend({
-                        <br>
-                          defaults: function() {
-                      return {
-                        name: “”
-                        }
-                      }
-                    });
-
-                    <br>
-                    //Create instance of the model
-                    <br>
-                      var helloWorld = new Greeting({
-                        name: “Hello World!”
-                    });
-
-                    <br>
-                    //Create view class to render in HTML
-                    <br>
-                    var SayHello = Backbone.Model.extend({
-                      el: $(‘body’),
-                    <br>
-                      initialize: function(){
-                      _.bindAll(this, ‘render’);
-                      this.render();
-                    }
-                    <br>
-                        render: function(){
-                        $(this.el).append(“<p>Hello world</p>”);}
-                    })
-                    <br>
-                    //Create instantiation view of greeting
-                    <br>
-                      var sayHello = new SayHello({
-                        model: helloWorld
-                    });
-                    </div>
-
-                    <div>
-                    I also have to handed to D3.  At first, they look beautiful, friendly, and sexy, but i can’t seem to understand how you can use to manipulate documents based on data.  
-                    I am glad we were able to learn them.  It encourages me to read and watch more videos about backbone and D3 on my own time.  It seems the best way to learn about backbone js and D3 is through practices.  I am not certain to say i understand them completely but i definitely know more about them.
-                    <hr>
-                    Here are some resources to help you get through backbone and D3:
-                    <br>
-                    Pluralsight tutorial: http://bit.ly/1LroIUn
-                    <br>
-                    Learn Backbone js: http://bit.ly/1iWH6HO
-                    <br>
-                    Backbone tutorial: https://backbonetutorials.com/
-                    <br>
-                    D3 youtube tutorial: http://bit.ly/1QSHDWa
-                    </div>
-                  </div>
-                <div class="col-xs-3"></div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-
-
-   	</div><!--/col-12-->
-  </div>
-</div>
-
-
-<hr>
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <ul class="list-inline">
-          <li><a href="www.facebook.com" class="icon-facebook icon-2x"></a></li>
-          <li><a href="www.github.com" class="icon-github icon-2x"></a></li>
-          <li><a href="www.linkedin.com" class="icon-linkedin icon-2x"></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	</body>
+<html>
+<head>
+	<title>Ted Ly Portfolio</title>
+</head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<link href="css/homepage.css" rel="stylesheet">
+	<script type="text/javascript" src="js/homepage.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,400,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+<body>
+	<div id="page">
+			<header class="header-top">
+				<div class="content-parallax section_one">
+					<div class="content dot-annimation"></div>
+				</div>
+				<div class="header-info">
+					<div class="avatar">
+						<img src="img/bioshot.png" />
+					</div>
+					<div class="info">
+						<small>I am a full stack software engineer fluent in Javascript</small>
+					</div>
+				</div> 
+			</header>
+			<div class="body">
+				<h3 class="center">My Portfolio</h3>
+				<div class="portfolio-content">
+					<div class="portfolio-item center">
+						<div class="portfolio-item-media">
+							<div class="content dot-annimation"></div>
+							<img src="http://tympanus.net/Development/ScatteredPolaroidsGallery/img/14.jpg"/>
+						</div>
+						<a class="title" href="#">About me</a>
+					</div>
+					<div class="portfolio-item center">
+						<div class="portfolio-item-media">
+							<div class="content dot-annimation"></div>
+							<img src="http://tympanus.net/Development/ScatteredPolaroidsGallery/img/15.jpg"/>
+						</div>
+						<a class="title" href="/blog.html">My blog</a>
+					</div>
+					<div class="portfolio-item center">
+						<div class="portfolio-item-media">
+							<div class="content dot-annimation"></div>
+							<img class="ffitImg" src="/img/ffit.png"/>
+						</div>
+						<a class="title" href="http://ffit.herokuapp.com/#/login">FFIT</a>
+					</div>
+					<div class="portfolio-item center">
+						<div class="portfolio-item-media">
+							<div class="content dot-annimation"></div>
+							<img class="llamaImg" src="/img/llama.png"/>
+						</div>
+						<a class="title" href="https://lldjmagpie.firebaseapp.com/">Llamajams</a>
+					</div>
+					<div class="portfolio-item center">
+						<div class="portfolio-item-media">
+							<div class="content dot-annimation"></div>
+							<img class="petwatchImg" src="/img/petwatch.png"/>
+						</div>
+						<a class="title" href="https://petwatch.firebaseapp.com/#/?_k=j6bq47">Petwatch</a>
+					</div>
+					<div class="portfolio-item center">
+						<div class="portfolio-item-media">
+							<div class="content dot-annimation"></div>
+							<img class="instapopImg" src="/img/instapop.png"/>
+						</div>
+						<a class="title" href="http://instagrampop.herokuapp.com/#/gallery">Instapop</a>
+					</div>
+				</div>
+			</div>
+				<h2 class="center visible thanks-mess">Thanks you for visit my page.</h2>
+		</div>
+		<footer>
+			<p class="center">
+				<a href="https://github.com/plasm0dium" class="icon-github icon-4x"></a>
+				<a href="https://www.linkedin.com/in/plasm0dium" class="icon-linkedin icon-4x"></a>
+			</p>
+		</footer>
+</body>
+	
 </html>

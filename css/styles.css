@@ -1,3 +1,12 @@
+.bio {
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  white-space: pre-line;
+}
+pre {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
 .navbar-form input, .form-inline input {
   width:auto;
 }
