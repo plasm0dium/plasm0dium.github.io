@@ -13,6 +13,10 @@ img{
 }
 .center{
 	text-align: center;
+	font-weight: bold;
+}
+.thankyou{
+	color: #428BCA;
 }
 a{
 	color: #555;
@@ -26,7 +30,9 @@ a:hover{
 .visible{
 	color: #d3d3d3;
 }
-#page{}
+#page{
+	background-color: #E8E8E8;
+}
 
 .ffitImg{
 	width: auto;
